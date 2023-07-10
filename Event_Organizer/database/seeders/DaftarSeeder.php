@@ -5,6 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+//import model Daftar
+use App\Models\Daftar;
 class DaftarSeeder extends Seeder
 {
     /**
@@ -13,11 +15,11 @@ class DaftarSeeder extends Seeder
     public function run(): void
     {
         Daftar::create([
-            'tanggal_daftar' => '2000-01-01',
+            'tanggal_daftar' => '2017-02-02',
             'alasan' => 'Untuk acara wisuda',
-            'nama_peserta' => 'Alex',
+            'nama_peserta' => 'Alexis',
             'nama_kegiatan' => 'Wisuda',
-            'kategori_peserta' => 'Menengah keatas'
+            'kategori_peserta' => 'Menengah keatas',
         ]); 
     }
 }

@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('nama_peserta');
             $table->string('nama_kegiatan');
             $table->string('kategori_peserta');
-            
             $table->timestamps();
         });
     }

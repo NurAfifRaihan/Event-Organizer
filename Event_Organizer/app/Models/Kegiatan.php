@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Kegiatan extends Model
 {
     use HasFactory;
-    protected $table = 'kegiatan';
+    protected $table = 'Kegiatan';
     protected $fillable = ['judul', 'kapasitas', 'harga_tiket', 'tanggal', 'narasumber', 'tempat', 'jenis_kegiatan'];
-    public $timestamps = false;
+   // public $timestamps = false;
 }

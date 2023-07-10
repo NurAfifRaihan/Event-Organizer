@@ -5,6 +5,9 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+//import model Kegiatan
+
+use App\Models\Kegiatan;
 class KegiatanSeeder extends Seeder
 {
     /**
@@ -12,7 +15,7 @@ class KegiatanSeeder extends Seeder
      */
     public function run(): void
     {
-        Kegiatangi::create([
+        Kegiatan::create([
             'judul' => 'Wisudawan ter epic',
             'kapasitas' => 500,
             'harga_tiket' => 20000,
