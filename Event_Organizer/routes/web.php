@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KegiatanController;
+use App\Http\Controllers\LandingpageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,3 +47,5 @@ Auth::routes();
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home3', [LandingpageController::class, 'index']);
