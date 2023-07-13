@@ -40,7 +40,7 @@ class DaftarController extends Controller
             'alasan' => 'required',
             'nama_peserta' => 'required|min:5|max:25',
             'nama_kegiatan' => 'required',
-            'kagiatan_peserta' => 'required',
+            'kategori_peserta' => 'required',
         ]);
 
         Daftar::create($validated);
@@ -84,7 +84,7 @@ class DaftarController extends Controller
             'alasan' => 'required',
             'nama_peserta' => 'required|min:5|max:25',
             'nama_kegiatan' => 'required',
-            'kagiatan_peserta' => 'required',
+            'kategori_peserta' => 'required',
         ]);
 
          // Update data
@@ -92,7 +92,7 @@ class DaftarController extends Controller
          $daftar->alasan =$request->input('alasan');
          $daftar->nama_peserta =$request->input('nama_peserta');
          $daftar->nama_kegiatan =$request->input('nama_kegiatan');
-         $daftar->kagiatan_peserta =$request->input('kagiatan_peserta');
+         $daftar->kategori_peserta =$request->input('kategori_peserta');
          $daftar->save();
  
          return redirect('/dashboard/daftar')->with('succes', 'Data Berhasil Di Update');

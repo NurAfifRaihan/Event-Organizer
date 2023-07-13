@@ -31,7 +31,21 @@
                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li>
-                        <li><a class="dropdown-item" href="{{ url('/home') }}">Logout</a>
+                            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                                <a class="dropdown-item" href="{{ url('home') }}">
+                                    <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{{ route('logout') }}"
+                                    onclick="event.preventDefault();
+                                                         document.getElementById('logout-form').submit();">
+                                    <i class="mdi mdi-logout me-2 text-primary"></i>
+                                    {{ __('Logout') }}
+                                </a>
+    
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                    @csrf
+                                </form>
+                            </div>
                         </li>
                     </ul>
                 </li>
