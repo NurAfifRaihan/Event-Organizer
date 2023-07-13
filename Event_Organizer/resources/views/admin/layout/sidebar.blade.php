@@ -8,11 +8,11 @@
                       <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                       Dashboard
                   </a>
-                  <a class="nav-link" href="{{ url('/daftar') }}">
+                  <a class="nav-link" href="{{ url('/dashboard/daftar') }}">
                       <div class="sb-nav-link-icon"><i class="	fas fa-address-card"></i></div>
                       Daftar Peserta
                   </a>
-                  <a class="nav-link" href="{{ url('/kegiatan') }}">
+                  <a class="nav-link" href="{{ url('dashboard/kegiatan') }}">
                       <div class="sb-nav-link-icon"><i class="fas fa-chess-bishop"></i></div>
                       Kegiatan
                   </a>

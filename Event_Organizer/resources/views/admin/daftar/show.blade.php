@@ -1,8 +1,8 @@
 @extends('admin.layout.index')
 @section('content')
 <div class="content-wrapper">
-    <div class="page-header">
-      <h1 class="mt-4">Tables</h1>
+ <div class="page-header">
+  <h1 class="mt-4">Tables</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
         <li class="breadcrumb-item active">Tables</li>
@@ -28,12 +28,12 @@
                     <th> Nama </th>
                     <th> Kegiatan </th>
                     <th> Kategori </th>
-                    <th> Action </th>
+
                   </tr>
                 </thead>
                 <tbody>
                         <tr>
-                            <td> {{ $loop->iteration }} </td>
+                           <td> {{ $daftar->id }} </td>
                             <td> {{ $daftar->tanggal_daftar }} </td>
                             <td> {{ $daftar->alasan }} </td>
                             <td> {{ $daftar->nama_peserta }} </td>

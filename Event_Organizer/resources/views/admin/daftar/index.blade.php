@@ -46,7 +46,7 @@
                                 <form action="{{ url('/dashboard/daftar/destroy',$daftar->id) }}" method="POST" class=d-inline>
                                   @csrf
                                   @method('delete')
-                                  <button type="Submit" class="btn btn-primary btn-sm" onclick="if(!confirm('Anda Yakin Menghapus Data Produk{{ $member->id }}" {return false}>Delete</button>
+                                  <button type="Submit" class="btn btn-primary btn-sm" onclick="if(!confirm('Anda Yakin Menghapus Data Produk{{ $daftar->id }}" {return false}>Delete</button>
                                 </form> 
                             </td>
                         </tr>

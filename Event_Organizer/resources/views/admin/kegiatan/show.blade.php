@@ -28,12 +28,11 @@
                     <th> Narasumber </th>
                     <th> Tempat </th>
                     <th> Kegiatan </th>
-                    <th> Action </th>
                   </tr>
                 </thead>
                 <tbody>
                         <tr>
-                            <td> {{ $loop->iteration }} </td>
+                            <td> {{ $kegiatan->id }} </td>
                             <td> {{ $kegiatan->judul }} </td>
                             <td> {{ $kegiatan->kapasitas }} </td>
                             <td> {{ $kegiatan->harga_tiket }} </td>
