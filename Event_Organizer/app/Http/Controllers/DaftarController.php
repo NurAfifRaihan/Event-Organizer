@@ -40,7 +40,7 @@ class DaftarController extends Controller
             'alasan' => 'required',
             'nama_peserta' => 'required|min:5|max:25',
             'nama_kegiatan' => 'required',
-            'kagiatan_peserta' => 'required',
+            'kategori_peserta' => 'required',
         ]);
 
         Daftar::create($validated);
