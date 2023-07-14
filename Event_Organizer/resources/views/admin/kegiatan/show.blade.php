@@ -1,21 +1,16 @@
 @extends('admin.layout.index')
 @section('content')
-    <h1 class="mt-4">Tables</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-        <li class="breadcrumb-item active">Tables</li>
-    </ol>
-    <div class="card mb-4">
-        <div class="card-body">
-            <a target="_blank" href="https://datatables.net/">official DataTables</a>
-        </div>
-    </div>
-    <a href="{{ url('/dashboard/kegiatan/create') }}" class="btn btn-primary btn-sm">+Tambah Kegiatan</a>
+<div class="content-wrapper">
+  <div class="page-header">
+      <br>
+  </div>
+    {{-- <a href="{{ url('/dashboard/kegiatan/create') }}" class="btn btn-primary btn-sm">+Tambah Kegiatan</a> --}}
     <div class="row">
       <div class="col-12 grid-margin">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Daftar Anggota</h4>
+            <h4 class="card-title">Daftar Kegiatan</h4>
+            <br>
             <div class="table-responsive">
               <table class="table">
                 <thead>

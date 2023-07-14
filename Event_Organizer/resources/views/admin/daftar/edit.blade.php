@@ -2,22 +2,11 @@
 @section('content')
 <div class="content-wrapper">
     <div class="page-header">
-        <h3 class="page-title">
-            <span class="page-title-icon bg-gradient-primary text-white me-2">
-                <i class="mdi mdi-book"></i>
-            </span> Daftar 
-        </h3>
-        <nav aria-label="breadcrumb">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item active" aria-current="page">
-                    <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
-                </li>
-            </ul>
-        </nav>
+        <br>
     </div>
     <div class="card">
         <div class="card-body">
-            <h3>Tambah Daftar</h3><br />
+            <h3>Edit Peserta</h3><br />
             {{-- menampilkan error validasi --}}
             @if (count($errors) > 0)
                 <div class="alert alert-danger">
@@ -75,7 +64,8 @@
                             placeholder="Kategori" value="{{ $daftar->kategori_peserta }}">
                     </div>
                 </div>
-                <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+                <br>
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
                 <button type="reset" class="btn btn-light">Reset</button>
             </form>
         </div>

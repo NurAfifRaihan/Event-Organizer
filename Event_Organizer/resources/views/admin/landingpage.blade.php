@@ -7,20 +7,21 @@
     <meta name="keywords" content="Bootstrap, Landing page, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Crystal - Free Video Background Website Template</title>
+    <title>Project Event Organizer</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/line-icons.css">
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <link rel="stylesheet" href="css/nivo-lightbox.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/menu_sideslide.css">
-    <link rel="stylesheet" href="css/main.css">    
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{{ asset ('admin/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/line-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/owl.theme.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/nivo-lightbox.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/menu_sideslide.css') }}">
+    <link rel="stylesheet" href="{{ asset ('admin/css/main.css') }}">    
+    <link rel="stylesheet" href="{{ asset ('admin/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset ('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css') }}">
 
   </head>
   <body>
@@ -33,10 +34,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#services">Services</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link" href="#features">Features</a>
-              </li>                            
+              </li>                              
               <li class="nav-item">
                 <a class="nav-link" href="#portfolios">Our Works</a>
               </li>            
@@ -44,14 +42,11 @@
                 <a class="nav-link" href="#pricing">Pricing</a>
               </li>     
               <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li> 
-              <li class="nav-item">
-                <a class="nav-link" href="#subscribe">Subscribe</a>
+                <a class="nav-link" href="#blog">Type</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ ('/dashboard')}}">Admin</a>
+              </li> 
             </ul>
           </div>
         </nav> 
@@ -60,11 +55,11 @@
   	<!-- Header Section Start -->
 
     <header id="video-area" data-stellar-background-ratio="0.5">    
-      <div id="block" data-vide-bg="video/video"></div>
+      <div id="block" data-vide-bg="{{ asset ('admin/video/video') }}"></div>
       <div class="fixed-top">
           <div class="container">
             <div class="logo-menu">
-              <a href="index.html" class="logo"><span class="lnr lnr-diamond"></span> CRYSTAL</a>
+              <a href="{{ url ('/home3') }}" class="logo"><span class="lnr lnr-diamond"></span> Event Organizer</a>
               <button class="menu-button" id="open-button"><i class="lnr lnr-menu"></i></button>    
             </div>           
           </div>
@@ -74,9 +69,9 @@
         <div class="row justify-content-md-center">
           <div class="col-md-10">
             <div class="contents text-center">
-              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Crystal - Free Video Background HTML5 Bootstrap Template</h1>
-              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Free High-quality Responsive Video Background Website Template Based on Bootstrap 4 to Create Complete Business Website in Minutes</p>
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="lnr lnr-download"></i> Download</a>
+              <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Crystal Event Organizer</h1>
+              <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Amanah | Terjangkau | Terpercaya </p>
+              <a href="{{ url ('/booking') }}" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><i class="bi bi-clipboard2-minus"></i> Booking Now!</a>
             </div>
           </div>
         </div> 
@@ -91,37 +86,37 @@
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Our <span>Services</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Melayani berbagai macam jenis acara <br> Organizing dengan harga murah</p>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.2s">
               <div class="icon">
-                <i class="lnr lnr-pencil"></i>
+                <i class="bi bi-flower2"></i>
               </div>
-              <h4>Content Writing</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+              <h4>Pernikahan</h4>
+              <p>Nikmati dengan harga mulai dari 5000k</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.4s">
               <div class="icon">
-                <i class="lnr lnr-cog"></i>
+                <i class="bi bi-balloon"></i>
               </div>
-              <h4>Web Development</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+              <h4>Ulang Tahun</h4>
+              <p>Nikmati dengan harga mulai dari 1000k</p>
             </div>
           </div>
           <div class="col-md-4 col-sm-6">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.6s">
               <div class="icon">
-                <i class="lnr lnr-chart-bars"></i>
+                <i class="bi bi-mortarboard"></i>
               </div>
-              <h4>Graphic Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+              <h4>Wisuda</h4>
+              <p>Nikmati dengan harga mulai dari 1500k</p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <!-- <div class="col-md-4 col-sm-6">
             <div class="item-boxes wow fadeInDown" data-wow-delay="0.8s">
               <div class="icon">
                 <i class="lnr lnr-layers"></i>
@@ -149,12 +144,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
     <!-- Services Section End -->
 
     <!-- Features Section Start -->
-    <section id="features" class="section" data-stellar-background-ratio="0.2">
+    <!-- <section id="features" class="section" data-stellar-background-ratio="0.2">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Amazing <span>Features</span></h2>
@@ -195,7 +190,7 @@
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
             <div class="show-box wow fadeInDown animated" data-wow-offset="10">
-              <img src="img/features/feature.jpg" alt="">
+              <img src="/features/feature.jpg" alt="">
             </div>
           </div>
           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -231,11 +226,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Features Section End -->    
 
     <!-- Start Video promo Section -->
-    <section class="video-promo section" data-stellar-background-ratio="0.5">
+    <!-- <section class="video-promo section" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -248,7 +243,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- End Video Promo Section -->
 
     <!-- Portfolio Section -->
@@ -258,7 +253,7 @@
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Our <span>Works</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Dokumentasi Project Kami <br></p>
         </div>
         <div class="row">          
           <div class="col-md-12">
@@ -268,24 +263,24 @@
                 All 
               </a>
               <a class="control btn btn-common" data-filter=".marketing">
-                Design 
+                Pernikahan 
               </a>
               <a class="control btn btn-common" data-filter=".planning">
-                Development
+                Ulang Tahun
               </a>
               <a class="control btn btn-common" data-filter=".research">
-                Print 
+                Wisuda 
               </a>
             </div>
             <!-- Portfolio Controller/Buttons Ends-->          
 
             <!-- Portfolio Recent Projects -->
             <div id="portfolio" class="row wow fadeInUp" data-wow-delay="0.8s">
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing marketing">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img1.jpg">
-                      <img src="img/portfolio/img1.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/wed.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/wed.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
@@ -294,8 +289,8 @@
               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img2.jpg">
-                      <img src="img/portfolio/img2.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/ultah.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/ultah.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
@@ -304,38 +299,38 @@
               <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix research">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img3.jpg">
-                      <img src="img/portfolio/img3.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/wisuda1.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/wisuda1.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing research">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img4.jpg">
-                      <img src="img/portfolio/img4.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/wed1.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/wed1.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix marketing planning">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img5.jpg">
-                      <img src="img/portfolio/img5.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/ultah1.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/ultah1.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
                 </div>
               </div>
-              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix planning research">
+              <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix research">
                 <div class="portfolio-item">
                   <div class="shot-item">
-                    <a class="overlay lightbox" href="img/portfolio/img6.jpg">
-                      <img src="img/portfolio/img6.jpg" alt="" />  
+                    <a class="overlay lightbox" href="{{ asset ('admin/img/portfolio/wisuda.jpg') }}">
+                      <img src="{{ asset ('admin/img/portfolio/wisuda.jpg') }}" alt="" />  
                       <i class="lnr lnr-plus-circle item-icon"></i>
                     </a>
                   </div>               
@@ -353,9 +348,9 @@
     <div id="pricing" class="section pricing-section">
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Pricing <span>Plans</span></h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Daftar <span>Harga</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Menyediakan berbagai macam kelas <br> dengan harga terjangkau</p>
         </div>
 
         <div class="row pricing-tables">
@@ -365,13 +360,13 @@
                 <i class="lnr lnr-rocket"></i> 
               </div>
               <div class="pricing-details">
-                <h2>Starter Plan</h2>
-                <span>Free</span>
+                <h2>Standar Plan</h2>
+                <span>1499k</span>
                 <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
+                  <li>Meyediakan Layanan</li>
+                  <li>Dengan 5 Orang Staff</li>
+                  <!-- <li>Suspendisse quis metus</li>
+                  <li>Vestibul varius fermentum erat</li> -->
                 </ul>
               </div>
               <div class="plan-button">
@@ -387,16 +382,19 @@
               </div>
               <div class="pricing-details">
                 <h2>Popular Plan</h2>
-                <span>$3.99</span>
+                <span>3499k</span>
+                <br>
                 <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
+                  <li>Meyediakan Layanan</li>
+                  <li>Dengan 10 Orang Staff</li>
+                  <!-- <li>Suspendisse quis metus</li>
+                  <li>Vestibul varius fermentum erat</li> -->
                 </ul>
               </div>
+              <br>
+              <br>
               <div class="plan-button">
-                <a href="#" class="btn btn-common">Buy Now</a>
+                <a href="#" class="btn btn-common">Get Plan</a>
               </div>
             </div>
           </div>
@@ -408,16 +406,16 @@
               </div>
               <div class="pricing-details">
                 <h2>Premium Plan</h2>
-                <span>$9.50</span>
+                <span>6999k</span>
                 <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
+                  <li>Menyediakan Layanan</li>
+                  <li>Dengan 20 Orang Staff</li>
+                  <!-- <li>Suspendisse quis metus</li>
+                  <li>Vestibul varius fermentum erat</li> -->
                 </ul>
               </div>
               <div class="plan-button">
-                <a href="#" class="btn btn-common">Buy Now</a>
+                <a href="#" class="btn btn-common">Get Plan</a>
               </div>
             </div>
           </div>
@@ -436,11 +434,11 @@
             <div class="wow fadeInUp" data-wow-delay=".2s">
               <div class="facts-item"> 
                 <div class="icon">
-                  <i class="lnr lnr-magic-wand"></i>
+                  <i class="bi bi-emoji-heart-eyes"></i>
                 </div>                
                 <div class="fact-count">
                   <h3><span class="counter">100</span>%</h3>
-                  <h4>Faster</h4>
+                  <h4>Amanah</h4>
                 </div>
               </div>
             </div>
@@ -449,11 +447,11 @@
             <div class="wow fadeInUp" data-wow-delay=".4s">
               <div class="facts-item">
                 <div class="icon">
-                  <i class="lnr lnr-coffee-cup"></i>
+                  <i class="bi bi-currency-exchange"></i>
                 </div>                
                 <div class="fact-count">
                   <h3><span class="counter">700</span></h3>
-                  <h4>Cup of Coffee</h4>
+                  <h4>Murah</h4>
                 </div>
               </div>
             </div>
@@ -462,11 +460,11 @@
             <div class="wow fadeInUp" data-wow-delay=".6s">
               <div class="facts-item">
                 <div class="icon">
-                  <i class="lnr lnr-user"></i>
+                  <i class="bi bi-wallet2"></i>
                 </div>                
                 <div class="fact-count">
                   <h3><span class="counter">10000</span>+</h3>
-                  <h4>Active Clients</h4>
+                  <h4>Terjangkau</h4>
                 </div>
               </div>
             </div>
@@ -475,11 +473,11 @@
             <div class="wow fadeInUp" data-wow-delay=".8s">
               <div class="facts-item">
                 <div class="icon">
-                  <i class="lnr lnr-heart"></i>
+                  <i class="bi bi-magic"></i>
                 </div>                
                 <div class="fact-count">
                   <h3><span class="counter">1689</span></h3>
-                  <h4>Peoples Love</h4>
+                  <h4>Design Modern</h4>
                 </div>
               </div>
             </div>
@@ -496,27 +494,27 @@
           <div class="col-md-10 wow fadeInRight" data-wow-delay="0.2s">
             <div class="touch-slider owl-carousel owl-theme">
               <div class="testimonial-item">
-                <img src="img/testimonial/customer1.png" alt="Client Testimonoal" />
+                <img src="{{ asset ('admin/img/testimonial/han.jpg') }}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                  <h3>Johnathan Doe</h3>
-                  <span>Marketing Head Matrix media</span>
+                  <p>Konsepnya bagus, unik dan modern</p>
+                  <h3>Rehan</h3>
+                  <span>CEO Optima Inc</span>
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="img/testimonial/customer2.png" alt="Client Testimonoal" />
+                <img src="{{ asset ('admin/img/testimonial/nur.jpg') }}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                  <h3>Oidila Matik</h3>
+                  <p>Organizer dengan harga murah tapi design bagus dan juga amanah</p>
+                  <h3>Nurul</h3>
                   <span>President Lexo Inc</span>
                 </div>
               </div>
               <div class="testimonial-item">
-                <img src="img/testimonial/customer3.png" alt="Client Testimonoal" />
+                <img src="{{ asset ('admin/img/testimonial/mi.jpg') }}" alt="Client Testimonoal" />
                 <div class="testimonial-text">
-                  <p>Morbi eget dictum enim. Praesent sed quam sit amet lorem tempor rhoncus. <br>In hac habitasse platea dictumst. Vivamus in accumsan ex</p>
-                  <h3>- Alex Dattilo</h3>
-                  <span>CEO Optima Inc</span>
+                  <p>Designnya unik ya organizernya murah lagi 😍</p>
+                  <h3>Rahmi</h3>
+                  <span>Marketing Head Matrix Media</span>
                 </div>
               </div>
             </div>
@@ -527,7 +525,7 @@
     <!-- testimonial Section Start -->
 
     <!-- Download Section Start -->
-    <section id="download" class="section">
+    <!-- <section id="download" class="section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s"><span>Download</span> Our App</h2>
@@ -540,7 +538,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Download Section End -->
 
     <!-- Blog Section -->
@@ -548,9 +546,9 @@
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header">          
-          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Latest <span>Blogs</span></h2>
+          <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Event <span>Type</span></h2>
           <hr class="lines wow zoomIn" data-wow-delay="0.3s">
-          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy <br> nibh euismod tincidunt ut laoreet dolore magna.</p>
+          <p class="section-subtitle wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Menyediakan berbagai macam jenis event <br> </p>
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 blog-item">
@@ -558,21 +556,21 @@
             <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.3s">
               <div class="blog-item-img">
                 <a href="single-post.html">
-                  <img src="img/blog/img1.jpg" alt="">
+                  <img src="{{ asset ('admin/img/blog/wed2.jpg') }}" alt="">
                 </a>                
               </div>
               <div class="blog-item-text"> 
                 <h3>
-                <a href="#">How often should you tweet?</a>
+                <a href="#">Pernikahan mewah dengan organizer murah?</a>
                 </h3>
                 <div class="meta-tags">
-                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Mar 23, 2018</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Mar 23, 2021</span>
+                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 35 Comments</a></span>
                 </div>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                Menyediakan layanan organizing pernikahan dengan harga terjangkau namun memiliki design modern
                 </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                <!-- <a href="single-post.html" class="btn btn-common btn-rm">Read More</a> -->
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -583,21 +581,22 @@
             <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.6s">
               <div class="blog-item-img">
                 <a href="single-post.html">
-                  <img src="img/blog/img2.jpg" alt="">
+                  <img src="{{ asset ('admin/img/blog/ultah2.jpg') }}" alt="">
                 </a>                
               </div>
               <div class="blog-item-text"> 
                 <h3>
-                  <a href="#">Content is still king</a>
+                  <a href="#">Pesta Ulang Tahun</a>
                 </h3>
                 <div class="meta-tags">
-                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Mar 29, 2018</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Jun 18, 2023</span>
+                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 21 Comments</a></span>
                 </div>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                  Menyediakan layanan organizing acara ulang tahun dengan harga terjangkau dan memiliki design yang aesthetic
+ 
                 </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                <!-- <a href="single-post.html" class="btn btn-common btn-rm">Read More</a> -->
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -608,21 +607,22 @@
             <div class="blog-item-wrapper wow fadeInUp" data-wow-delay="0.9s">
               <div class="blog-item-img">
                 <a href="single-post.html">
-                  <img src="img/blog/img3.jpg" alt="">
+                  <img src="{{ asset ('admin/img/blog/wisuda2.jpg') }}" alt="">
                 </a>                
               </div>
               <div class="blog-item-text">    
                 <h3>
-                  <a href="#">Social media at work</a>
+                  <a href="#">Acara Wisuda</a>
                 </h3>
                 <div class="meta-tags">
-                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Mar 21, 2018</span>
-                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 24 Comments</a></span>
+                  <span class="date"><i class="lnr lnr-calendar-full"></i>on Jun 19, 2022</span>
+                  <span class="comments"><a href="#"><i class="lnr lnr-bubble"></i> 50 Comments</a></span>
                 </div>
                 <p>
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua... 
+                  Menyediakan layanan organizing acara wisuda dengan harga terjangkau dan memiliki design yang bisa dicustome
+
                 </p>
-                <a href="single-post.html" class="btn btn-common btn-rm">Read More</a>
+                <!-- <a href="single-post.html" class="btn btn-common btn-rm">Read More</a> -->
               </div>
             </div>
             <!-- Blog Item Wrapper Ends-->
@@ -633,13 +633,13 @@
     <!-- blog Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section">
+    <!-- <section id="contact" class="section">
       <div class="container">
         <div class="row justify-content-md-center">          
           <div class="col-md-9 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">            
             <div class="contact-block">
               <div class="section-header">          
-                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Contact <span>Us</span></h2>
+                <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Booking <span>Now</span></h2>
                 <hr class="lines wow zoomIn" data-wow-delay="0.3s">
               </div>
               <form id="contactForm">
@@ -679,11 +679,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact Section End -->
 
     <!-- Subcribe Section Start -->
-    <div id="subscribe" class="section">
+    <!-- <div id="subscribe" class="section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.3s">Subscribe <span>Newsletter</span></h2>
@@ -699,7 +699,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Subcribe Section End -->
 
     <!-- Footer Section Start -->
@@ -718,7 +718,7 @@
               </ul>
             </div>
             <div class="site-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="0.3s">
-              <p>All copyrights reserved &copy; 2017 - Designed & Developed by <a rel="nofollow" href="https://uideck.com">UIdeck</a></p>
+              <p>Project Event Organizer &copy; 2023 - Designed & Developed by <a rel="nofollow" href="{{ url ('https://uideck.com') }}">UIdeck</a></p>
             </div>  
           </div>
         </div>
@@ -739,26 +739,26 @@
     </div>    
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="js/jquery-min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/nivo-lightbox.js"></script>
-    <script src="js/owl.carousel.min.js"></script>    
-    <script src="js/jquery.stellar.min.js"></script>    
-    <script src="js/jquery.nav.js"></script>    
-    <script src="js/smooth-scroll.js"></script>    
-    <script src="js/smooth-on-scroll.js"></script>    
-    <script src="js/wow.js"></script>    
-    <script src="js/menu.js"></script>
-    <script src="js/jquery.vide.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>    
-    <script src="js/jquery.magnific-popup.min.js"></script>    
-    <script src="js/waypoints.min.js"></script>    
-    <script src="js/form-validator.min.js"></script>
-    <script src="js/contact-form-script.js"></script>     
-    <script src="js/main.js"></script>
+    <script src="{{ asset ('admin/js/jquery-min.js') }}"></script>
+    <script src="{{ asset ('admin/js/tether.min.js') }}"></script>
+    <script src="{{ asset ('admin/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset ('admin/js/classie.js') }}"></script>
+    <script src="{{ asset ('admin/js/mixitup.min.js') }}"></script>
+    <script src="{{ asset ('admin/js/nivo-lightbox.js') }}"></script>
+    <script src="{{ asset ('admin/js/owl.carousel.min.js') }}"></script>    
+    <script src="{{ asset ('admin/js/jquery.stellar.min.js') }}"></script>    
+    <script src="{{ asset ('admin/js/jquery.nav.js') }}"></script>    
+    <script src="{{ asset ('admin/js/smooth-scroll.js') }}"></script>    
+    <script src="{{ asset ('admin/js/smooth-on-scroll.js') }}"></script>    
+    <script src="{{ asset ('admin/js/wow.js') }}"></script>    
+    <script src="{{ asset ('admin/js/menu.js') }}"></script>
+    <script src="{{ asset ('admin/js/jquery.vide.js') }}"></script>
+    <script src="{{ asset ('admin/js/jquery.counterup.min.js') }}"></script>    
+    <script src="{{ asset ('admin/js/jquery.magnific-popup.min.js') }}"></script>    
+    <script src="{{ asset ('admin/js/waypoints.min.js') }}"></script>    
+    <script src="{{ asset ('admin/js/form-validator.min.js') }}"></script>
+    <script src="{{ asset ('admin/js/contact-form-script.js') }}"></script>     
+    <script src="{{ asset ('admin/js/main.js') }}"></script>
     
   </body>
 </html>

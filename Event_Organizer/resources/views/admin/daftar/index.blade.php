@@ -2,22 +2,17 @@
 @section('content')
 <div class="content-wrapper">
     <div class="page-header">
-      <h1 class="mt-4">Tables</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-        <li class="breadcrumb-item active">Tables</li>
-    </ol>
-    <div class="card mb-4">
-        <div class="card-body">
-            <a target="_blank" href="https://datatables.net/">official DataTables</a>
-        </div>
+      <h1 class="mt-4">Daftar Peserta</h1>
+      
     </div>
-    <a href="{{ url('/dashboard/daftar/create') }}" class="btn btn-primary btn-sm">+Tambah Anggota</a>
+    <br>
+    <a href="{{ url('/dashboard/daftar/create') }}" class="btn btn-primary btn-sm">+Tambah Peserta</a>
     <div class="row">
       <div class="col-12 grid-margin">
+        <br>
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title">Daftar Anggota</h4>
+            {{-- <h4 class="card-title">Daftar Anggota</h4> --}}
             <div class="table-responsive">
               <table class="table">
                 <thead>
@@ -41,12 +36,12 @@
                             <td> {{ $daftar->nama_kegiatan }} </td>
                             <td> {{ $daftar->kategori_peserta }} </td>
                             <td>
-                                <a href="{{ url('/dashboard/daftar/show',$daftar->id) }}" class="btn btn-primary btn-sm">View</a>
-                                <a href="{{ url('/dashboard/daftar/edit',$daftar->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                <a href="{{ url('/dashboard/daftar/show',$daftar->id) }}" class="btn btn-outline-primary">View</a>
+                                <a href="{{ url('/dashboard/daftar/edit',$daftar->id) }}" class="btn btn-outline-warning">Edit</a>
                                 <form action="{{ url('/dashboard/daftar/destroy',$daftar->id) }}" method="POST" class=d-inline>
                                   @csrf
                                   @method('delete')
-                                  <button type="Submit" class="btn btn-primary btn-sm" onclick="if(!confirm('Anda Yakin Menghapus Data Produk{{ $daftar->id }}" {return false}>Delete</button>
+                                  <button type="Submit" class="btn btn-outline-danger" onclick="if(!confirm('Anda Yakin Menghapus Data Produk{{ $daftar->id }}" {return false}>Delete</button>
                                 </form> 
                             </td>
                         </tr>

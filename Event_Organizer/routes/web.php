@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\LandingpageController;
+use App\Http\Controllers\BookingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,27 +22,27 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/dashboard', [DashboardController::class, 'index'])->middleware('auth');
 
 //Route Daftar
 
-Route::get('/dashboard/daftar', [DaftarController::class, 'index']);
-Route::get('/dashboard/daftar/create', [DaftarController::class, 'create']);
-Route::post('/dashboard/daftar/store', [DaftarController::class, 'store']);
-Route::delete('/dashboard/daftar/destroy/{id}', [DaftarController::class, 'destroy']);
-Route::get('/dashboard/daftar/edit/{id}', [DaftarController::class, 'edit']);
-Route::put('/dashboard/daftar/update/{id}', [DaftarController::class, 'update']);
-Route::get('/dashboard/daftar/show/{id}', [DaftarController::class, 'show']);
+Route::get('/dashboard/daftar', [DaftarController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/daftar/create', [DaftarController::class, 'create'])->middleware('auth');
+Route::post('/dashboard/daftar/store', [DaftarController::class, 'store'])->middleware('auth');
+Route::delete('/dashboard/daftar/destroy/{id}', [DaftarController::class, 'destroy'])->middleware('auth');
+Route::get('/dashboard/daftar/edit/{id}', [DaftarController::class, 'edit'])->middleware('auth');
+Route::put('/dashboard/daftar/update/{id}', [DaftarController::class, 'update'])->middleware('auth');
+Route::get('/dashboard/daftar/show/{id}', [DaftarController::class, 'show'])->middleware('auth');
 
 //Route kegiatan
 
-Route::get('/dashboard/kegiatan', [KegiatanController::class, 'index']);
-Route::get('/dashboard/kegiatan/create', [KegiatanController::class, 'create']);
-Route::post('/dashboard/kegiatan/store', [KegiatanController::class, 'store']);
-Route::delete('/dashboard/kegiatan/destroy/{id}', [KegiatanController::class, 'destroy']);
-Route::get('/dashboard/kegiatan/edit/{id}', [KegiatanController::class, 'edit']);
-Route::put('/dashboard/kegiatan/update/{id}', [KegiatanController::class, 'update']);
-Route::get('/dashboard/kegiatan/show/{id}', [KegiatanController::class, 'show']);
+Route::get('/dashboard/kegiatan', [KegiatanController::class, 'index'])->middleware('auth');
+Route::get('/dashboard/kegiatan/create', [KegiatanController::class, 'create'])->middleware('auth');
+Route::post('/dashboard/kegiatan/store', [KegiatanController::class, 'store'])->middleware('auth');
+Route::delete('/dashboard/kegiatan/destroy/{id}', [KegiatanController::class, 'destroy'])->middleware('auth');
+Route::get('/dashboard/kegiatan/edit/{id}', [KegiatanController::class, 'edit'])->middleware('auth');
+Route::put('/dashboard/kegiatan/update/{id}', [KegiatanController::class, 'update'])->middleware('auth');
+Route::get('/dashboard/kegiatan/show/{id}', [KegiatanController::class, 'show'])->middleware('auth');
 
 Auth::routes();
 
@@ -49,3 +50,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/home3', [LandingpageController::class, 'index']);
+Route::get('/booking', [BookingController::class, 'index']);
