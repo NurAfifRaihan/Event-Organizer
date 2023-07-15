@@ -39,7 +39,7 @@ Route::get('/dashboard/daftar/show/{id}', [DaftarController::class, 'show'])->mi
 Route::get('/dashboard/kegiatan', [KegiatanController::class, 'index'])->middleware('auth');
 Route::get('/dashboard/kegiatan/create', [KegiatanController::class, 'create'])->middleware('auth');
 Route::post('/dashboard/kegiatan/store', [KegiatanController::class, 'store'])->middleware('auth');
-Route::delete('/dashboard/kegiatan/destroy/{id}', [KegiatanController::class, 'destroy'])->middleware('admin');
+Route::delete('/dashboard/kegiatan/destroy/{id}', [KegiatanController::class, 'destroy'])->middleware('auth', 'admin');
 Route::get('/dashboard/kegiatan/edit/{id}', [KegiatanController::class, 'edit'])->middleware('admin');
 Route::put('/dashboard/kegiatan/update/{id}', [KegiatanController::class, 'update'])->middleware('admin');
 Route::get('/dashboard/kegiatan/show/{id}', [KegiatanController::class, 'show'])->middleware('auth');
@@ -53,5 +53,6 @@ Route::get('/home3', [LandingpageController::class, 'index']);
 Route::get('/booking', [BookingController::class, 'index']);
 Route::middleware(['auth', 'admin'])->group(function () {
     // Tambahkan rute yang hanya bisa diakses oleh admin di sini
+    Route::get('/admin/dashboard', 'DashboardController@dashboard');
 });
 
