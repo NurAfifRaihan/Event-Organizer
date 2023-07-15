@@ -24,7 +24,21 @@
                                 @enderror
                             </div>
                         </div>
-
+                        <div class="form-group row">
+                            <label class="col-4"></label>
+                            <div class="col-8">
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input name="role" id="role_0" type="radio"
+                                        class="custom-control-input" value="admin">
+                                    <label for="role_0" class="custom-control-label">Admin</label>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-inline">
+                                    <input name="role" id="role_1" type="radio"
+                                        class="custom-control-input" value="user">
+                                    <label for="role_1" class="custom-control-label">User</label>
+                                </div>
+                            </div>
+                        </div>
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
