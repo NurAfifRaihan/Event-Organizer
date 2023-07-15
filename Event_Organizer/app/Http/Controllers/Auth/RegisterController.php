@@ -69,5 +69,8 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+        $user->role = 'user'; // Menetapkan peran "user" saat pendaftaran
+        $user->role = 'admin'; // Menetapkan peran "admin" saat pendaftaran
+
     }
 }
