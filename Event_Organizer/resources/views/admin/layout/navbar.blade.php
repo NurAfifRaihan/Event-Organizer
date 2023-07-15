@@ -29,7 +29,7 @@
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li>
                             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-                                <a class="dropdown-item" href="{{ url('home') }}">
+                                <a class="dropdown-item" href="{{ url('/') }}">
                                     <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
